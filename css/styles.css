@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #555;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+header form {
+    display: flex;
+}
+form{
+    margin-top: 10px;
+    display: flex;
+    justify-content: end;
+    margin-right: 35px;
+}
+.text {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px 0 0 4px;
+}
+
+.botonBuscar {
+    padding: 0.5rem;
+    background-color: #333;
+    border: none;
+    color: #fff;
+    border-radius: 0 4px 4px 0;
+}
+footer {
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
