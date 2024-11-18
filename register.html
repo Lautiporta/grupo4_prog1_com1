@@ -14,13 +14,35 @@
             <a href="categories.html">Categorías</a>
             <a href="login.html">Login</a>
             <a href="register.html">Registro</a>
-            <form id="search-form">
+            <form class="formBuscar">
                 <input class="text" type="text" id="search-input" placeholder="Buscar receta">
                 <button class="botonBuscar" type="submit">Buscar</button>
             </form>
         </nav>
     </header>
 
+    <main class="mainFormularios">
+        <form class="formRegistro" action="results.html" method="GET">
+            <div class="input">
+                <label for="email">Email</label>
+                <input class="email" type="email" name="email" placeholder="Email">
+            </div>
+            <div class="input">
+                <label for="password">Contraseña</label>
+                
+                <input id="password" type="password" name="password" placeholder="password">
+            </div>
+            <div class="checkboxTerminos">
+                <input type="checkbox" id="remember" name="remember" required>
+                <label for="remember">Terminos y condiciones</label>
+            </div>
+            <div class="Redirigir">
+                <a class="linkform" href="./login.html">Ya tengo una cuenta</a>
+            </div>
+            <button type="submit" class="botonEnviar">ENVIAR</button>
+
+        </form>
+    </main>
     <footer>
         <p>Lautaro Porta y Lautaro Poggi</p>
     </footer>

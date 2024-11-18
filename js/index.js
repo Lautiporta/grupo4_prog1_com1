@@ -3,8 +3,8 @@ let cantidadRecetas = 0;
 
 function obtenerRecetas() {
     fetch(api)
-        .then(function(res) {
-            return res.json();
+        .then(function(response) {
+            return response.json();
         })
         .then(function(data) {
             console.log(data.recipes); 
@@ -15,14 +15,14 @@ function obtenerRecetas() {
             let allRecipesHTML = ""; 
 
             for (let i = cantidadRecetas; i < cantidadRecetas + 10 && i < arrayDeRecetas.length; i++) {
-                allRecipesHTML += `<article class="product-card">
-                                    <div class="product-details">
+                allRecipesHTML += `<article class="productos">
+                                    <div class="detalles">
                                         <img src="${arrayDeRecetas[i].image}" alt="${arrayDeRecetas[i].name}">
-                                        <p class="receta-name">${arrayDeRecetas[i].name}</p>
+                                        <p class="nombre">${arrayDeRecetas[i].name}</p>
                                         <p>Dificultad: ${arrayDeRecetas[i].difficulty}</p>
                                     </div>
-                                    <div class="product-actions">
-                                        <a href="detallereceta.html?id=${arrayDeRecetas[i].id}">Detalle</a>
+                                    <div class="productosLink">
+                                        <a class="detalles" href="receta.html?id=${arrayDeRecetas[i].id}">Detalle</a>
                                     </div>
                                   </article>`;
             }
@@ -33,20 +33,17 @@ function obtenerRecetas() {
             
             cantidadRecetas += 10;
         })
-        .catch(function(e) {
-            console.log("Error:", e);
+        .catch(function(error) {
+            console.log("El error es: " + error);
         });
 }
 
 
-document.querySelector('.add-more').addEventListener('click', function(e) {
+document.querySelector('.cargar-mas').addEventListener('click', function(e) {
     e.preventDefault(); 
     obtenerRecetas(); 
 });
 
 
 obtenerRecetas();
-
-
-  
   
