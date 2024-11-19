@@ -148,3 +148,62 @@ align-self: center;
     text-decoration: none;
     
 }
+/* ===== Estilos para Página de Detalle de Receta ===== */
+main h2 {
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+main img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 1rem;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+/* Categorías */
+.categories {
+    margin-top: 20px;
+}
+
+.category-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.category-list li {
+    background-color: #eee;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.category-list li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.category-list li a:hover {
+    text-decoration: underline;
+}
+main img.img-receta {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: auto; 
+    margin: 0 auto 20px; 
+    border-radius: 8px;
+    object-fit: cover; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
