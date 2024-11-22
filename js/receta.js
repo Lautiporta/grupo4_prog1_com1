@@ -30,7 +30,7 @@ console.log(RecetaId);
             imagenreceta.src = data.image;
             imagenreceta.alt = data.name;
 
-            // Mostrar categorías con enlaces
+           
             data.category.forEach(function (category) {
                 let li = document.createElement('li');
                 let link = document.createElement('a');
