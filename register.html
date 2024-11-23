@@ -25,6 +25,7 @@
 
     <main class="mainFormularios">
         <form class="formRegistro" action="results.html" method="GET">
+            <div class="TITULO">Registro</div>
             <div class="input">
                 <label for="email">Email</label>
                 <input class="email" type="email" name="email" placeholder="Email">
@@ -32,7 +33,7 @@
             <div class="input">
                 <label for="password">Contraseña</label>
                 
-                <input id="password" type="password" name="password" placeholder="password">
+                <input class="password" type="password" name="password" placeholder="password">
             </div>
             <div class="checkboxTerminos">
                 <input type="checkbox" id="remember" name="remember" required>
@@ -41,13 +42,17 @@
             <div class="Redirigir">
                 <a class="linkform" href="./login.html">Ya tengo una cuenta</a>
             </div>
+            <div class="divbutton">
             <button type="submit" class="botonEnviar">ENVIAR</button>
-
+            </div>
         </form>
+       
     </main>
-    <footer>
-        <p>Lautaro Porta y Lautaro Poggi</p>
-    </footer>
+    <div class="divfooter">
+        <footer>
+            <p>Lautaro Porta y Lautaro Poggi</p>
+        </footer>
+    </div>
     <script src="./js/register.js"></script>
 </body>
 </html>
