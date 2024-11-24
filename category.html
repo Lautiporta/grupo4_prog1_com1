@@ -1,31 +1,36 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Recetas por Categoría</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header>
-        <div class="logo"> <img class="logoimg" src="./img/image.png" alt=""></div>
+        <div class="logo">
+            <img class="logoimg" src="./img/image.png" alt="Logo">
+        </div>
         <nav>
             <a href="index.html">Home</a>
             <a href="categories.html">Categorías</a>
             <a href="login.html">Login</a>
             <a href="register.html">Registro</a>
-            <form class="formBuscar">
-                <input class="text" type="text" id="search-input" placeholder="Buscar receta">
-                <button class="botonBuscar" type="submit">Buscar</button>
-            </form>
         </nav>
     </header>
-
+    <main>
+        <div class="divh1">
+            <h1 class="recetasDeliciosas" id="category-title">Categoría</h1>
+        </div>
+        <div class="container-recipes">
+            <!-- Aquí se generarán dinámicamente las recetas -->
+        </div>
+    </main>
     <div class="divfooter">
         <footer>
             <p>Lautaro Porta y Lautaro Poggi</p>
         </footer>
     </div>
-     <script src="./js/category.js"></script>
+    <script src="./js/category.js"></script>
 </body>
 </html>

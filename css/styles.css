@@ -42,7 +42,7 @@ main {
     text-align: center;
     padding: 20px;
     background-color: white;
-    background-image: url(../img/img2.jpg);
+    background-image: url(../img/img2.);
 }
 
 
@@ -85,9 +85,9 @@ main {
     object-fit: cover;
 }
 
-.productosLink{
+
     
-}
+
 .detalles1{
     color: white;
     
@@ -313,6 +313,10 @@ main img.img-receta {
     
     
 }
+
+
+
+
 
 @media (max-width: 420px){
     .recetasDeliciosas{
