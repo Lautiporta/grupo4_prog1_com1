@@ -50,6 +50,7 @@ main {
 .recetasDeliciosas {
     font-size: 35px;
     margin-bottom: 20px;
+    color: black;
     background-color: #0f799c;
     border-radius: 25px;
     width: 33vw;
@@ -180,7 +181,7 @@ footer{
     max-width: 400px;
     
 }
-.text {
+#searchInput {
     margin-right: 70px;
     border: none;
     border-radius: 20px;
@@ -213,6 +214,7 @@ footer{
     display: flex;
     border-radius: 10px;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     background-color: #4E9BAB;
     padding: 20px 30px;
@@ -224,13 +226,14 @@ footer{
     display: flex;
     border-radius: 10px;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     background-color: #4E9BAB;
     padding: 20px 30px;
     text-align: center;
 } 
 .TITULO{
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 600;
 }
 label {
@@ -242,12 +245,15 @@ label {
 .input{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    width: 20vw;
+    
 }
 .email{
     border-color: #1e3a8a; 
     margin-bottom: 20px;
     border: none;
-
+    
 }
 .password{
     border-color: #1e3a8a; 
@@ -374,7 +380,7 @@ main img.img-receta {
         align-items: center;
     }
 
-    .text {
+    #searchInput {
         width: 80%;
         margin-bottom: 10px;
         margin-right: 0px;
@@ -390,7 +396,30 @@ main img.img-receta {
     footer{
         width: 90vw;
     }
+    .articleCategorias{
+        width: 80vw;
+    }
+    .instrucciones{
+        font-size: 12px;
+    }
+    .tiempoCoccion{
+        font-size: 12px;
+
+    }
+    .categorias{
+        font-size: 12px; 
+    }
+    .TITULO{
+        font-size: 27px;
+        font-weight: 500;
+    }
+    
+    .botonEnviar{
+        font-size: 10px;
+        width: 30vw;
+    }
 } 
+
 
 @media (max-width: 420px){
    
@@ -416,7 +445,7 @@ main img.img-receta {
         
     }
 
-    .text {
+    #searchInput {
         width: 90%;
     }
 
@@ -425,5 +454,8 @@ main img.img-receta {
         font-size: 14px;
         padding: 10px;
     }
-    
+    .TITULO{
+        font-size: 22px;
+        font-weight: 400;
+    }
 } 

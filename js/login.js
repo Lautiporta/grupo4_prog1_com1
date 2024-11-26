@@ -1,32 +1,36 @@
-// Seleccionar el formulario
-let formLogin = document.querySelector('.formLogin');
-let mensaje = "Por favor complete el campo email";
 
-// Escuchar el evento submit del formulario
-formLogin.addEventListener('submit', function (event) {
-  // Prevenir el envío por defecto del formulario
-  event.preventDefault();
 
-  // Seleccionar los campos de email y contraseña
-  const emailField = document.querySelector('.email');
-  const passwordField = document.querySelector('.password');
+let formulario = document.querySelector(".formLogin");
+let campoEmail = document.querySelector('#email');
 
-  // Obtener los valores de los campos
-  const email = emailField.value.trim();
-  const password = passwordField.value.trim();
+let campoPassword = document.querySelector('#password');
 
-  // Validar que el campo email no esté vacío
-  if (email === '') {
-    alert(mensaje);
-    return; // Detener la ejecución
+
+
+let errorEmail = document.querySelector('.invalid-feedback-email');
+
+let errorPassword = document.querySelector('.invalid-feedback-password');
+
+
+formulario.addEventListener('submit', function(event){
+    event.preventDefault();
+    let valid = true;
+
+    if (campoEmail.value == "") {
+      errorEmail.innerText = 'Por favor complete el campo email';
+      errorEmail.style.display = 'block';
+      valid = false;
   }
 
-  // Validar que el campo contraseña no esté vacío
-  if (password === '') {
-    alert(mensaje);
-    return; // Detener la ejecución
-  }
 
-  // Si las validaciones son correctas, redirigir a la página principal
-  window.location.href = 'index.html';
+    if (campoPassword.value == "") {
+        errorPassword.innerText = 'Por favor complete el campo contraseña';
+        errorPassword.style.display = 'block';
+        valid = false;
+    } else {
+        errorPassword.style.display = 'none';
+    }
+    if (valid) {
+        formulario.submit();
+    }
 });
