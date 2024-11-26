@@ -31,7 +31,7 @@ fetch(url)
     );
 
 
-    let container = document.querySelector(".container-recipes");
+    let container = document.querySelector(".containerCategory");
 
     if (recetasFiltradas.length === 0) {
       container.innerHTML = "<p>No se encontraron recetas para esta categoría.</p>";
@@ -42,11 +42,11 @@ fetch(url)
     let recipesHTML = recetasFiltradas
       .map((receta) => {
         return `
-          <article class="recipe-card">
-            <img src="${receta.image}" alt="${receta.name}" class="recipe-img">
-            <h2 class="recipe-title">${receta.name}</h2>
-            <p class="recipe-difficulty">Dificultad: ${receta.difficulty}</p>
-            <a href="receta.html?id=${receta.id}" class="recipe-link">Ver receta</a>
+          <article class="articleCategory">
+            <img src="${receta.image}" alt="${receta.name}" >
+            <h2 class="Categoria" >${receta.name}</h2>
+            <p class="Categoria">Dificultad: ${receta.difficulty}</p>
+            <a href="receta.html?id=${receta.id}" class="Categoria">Ver receta</a>
           </article>
         `;
       })

@@ -10,16 +10,16 @@ fetch(url)
     console.log(tags);
 
     
-    let seccion = document.querySelector(".container-tags");
+    let seccion = document.querySelector(".containerArticles");
     let allTagsHTML = ""; 
 
     
     for (let i = 0; i < tags.length; i++) {
       allTagsHTML += `
-        <article class="tag-card">
+        <article class="articleCategorias">
           <div class="divCategories">
-            <h2 class="Categoria"><a href="category.html?tag=${tags[i]}">${tags[i]}</a></h2>
-            <p>Descubre recetas relacionadas con esta categoría.</p>
+            <h2 ><a class="Categoria" href="category.html?tag=${tags[i]}">${tags[i]}</a></h2>
+            <p class="Categoria">Descubre recetas relacionadas con esta categoría.</p>
           </div>
         </article>
       `;

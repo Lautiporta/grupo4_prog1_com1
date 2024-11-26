@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -42,7 +43,7 @@ main {
     text-align: center;
     padding: 20px;
     background-color: white;
-    background-image: url(../img/img2.);
+    background-image: url(../img/img2.jpg);
 }
 
 
@@ -64,7 +65,7 @@ main {
     background-color: #7490af;
     border: 1px solid #ddd;
     border-radius: 5px;
-    overflow: hidden;
+    
     text-align: center;
     padding: 10px;
     width: 18vw;
@@ -79,11 +80,7 @@ main {
 }
 
 
-.productos img {
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
-}
+
 
 
     
@@ -112,6 +109,48 @@ p {
     text-decoration: none;
     border-radius: 5px;
     font-size: 1rem;
+}
+.articleCategorias{
+    background-color: #7490af;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 40vw;
+    padding: 10px;
+    margin-bottom: 4px;
+
+}
+.containerArticles{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.Categoria{
+text-decoration: none;
+color: #1e3a8a;
+}
+.articleCategory{
+    background-color: #7490af;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 90vw;
+    padding: 10px;
+    margin-bottom: 4px; 
+}
+.mainCategory{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.divReceta{
+    background-color: #7490af;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 90vw;
+    padding: 10px;
+    margin-bottom: 4px;
 }
 
 /* FOOTER */
@@ -158,7 +197,7 @@ footer{
     padding: 10px 20px;
     font-size: 14px;
     margin-left: 10px;
-    margin-right: 0px;
+    
 }
 .mainFormularios{
     background-color: white;
@@ -303,51 +342,88 @@ main img.img-receta {
     object-fit: cover; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
-.divCategories{
-    
-    
-    
-    
-}
-.Categoria{
-    
-    
-}
 
 
 
 
 
-@media (max-width: 420px){
-    .recetasDeliciosas{
-        
-    }
-    .container1 {
-     
-    }
-    .productos{
-
-    
-    
-    }
-} 
 
 
 @media (max-width: 768px){
+   
+    .recetasDeliciosas{
+        font-size: 20px ;
+    }
+    .container1 {
+        justify-content: center;
+       
+    }
+    .productos{
+        width: 30vw;
+    }
+    header{
+       
+        justify-content: center;
+       
+    }
+    nav{
+        font-size: 13px;
+    }
+    .formBuscar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text {
+        width: 80%;
+        margin-bottom: 10px;
+        margin-right: 0px;
+    }
+
+    .botonBuscar {
+        width: 80%;
+    }
+    .logo{
+        visibility: hidden;
+        width: 0vw;
+    }
+    footer{
+        width: 90vw;
+    }
+} 
+
+@media (max-width: 420px){
+   
+    .productos{
+        width: 90vw;
+    }
     .recetasDeliciosas{
         font-size: 15px ;
     }
-    .container1 {
-       justify-content: center;
-        width: 100vw;
+    .container1{
+        flex-direction: column;
+        align-items: center;
+       flex-wrap: wrap;
+       
     }
-    .productos{
-
-    width: 30VW;
-    
+    nav{
+        font-size: 10px;
     }
-    
-    
+   
+    .formBuscar {
+        flex-direction: column;
+        align-items: center;
+        
+    }
 
+    .text {
+        width: 90%;
+    }
+
+    .botonBuscar {
+        width: 90%;
+        font-size: 14px;
+        padding: 10px;
+    }
     
 } 

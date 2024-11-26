@@ -14,7 +14,7 @@ fetch(RecetaApi)
     .then(function (data) {
         console.log(data);
 
-        let Nombrereceta = document.querySelector('.nombreReceta');
+        let Nombrereceta = document.querySelector('.recetasDeliciosas   ');
         let instrucciones = document.querySelector('.instrucciones');
         let tiempo = document.querySelector('.tiempoCoccion');
         let imagenreceta = document.querySelector('.img-receta');
