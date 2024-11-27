@@ -43,7 +43,9 @@ fetch(url)
       .map((receta) => {
         return `
           <article class="articleCategory">
-            <img src="${receta.image}" alt="${receta.name}" >
+          
+          <img src="${receta.image}" alt="${receta.name}" >
+          
             <h2 class="Categoria" >${receta.name}</h2>
             <p class="Categoria">Dificultad: ${receta.difficulty}</p>
             <a href="receta.html?id=${receta.id}" class="Categoria">Ver receta</a>
