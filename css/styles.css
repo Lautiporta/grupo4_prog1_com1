@@ -240,20 +240,39 @@ label {
 }
 .input{
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex-direction: column;
     width: 20vw;
+
+    
     
 }
-.email{
-    border-color: #1e3a8a; 
-    margin-bottom: 20px;
+#email{
     border: none;
+    border-radius: 20px;
+    width: 27vw;
+
+    padding: 8px 10px;
+    font-size: 14px;
+    color: #1e3a8a;
+    background-color: white;
     
 }
-.password{
-    border-color: #1e3a8a; 
+#password{
+    width: 27vw;
     border: none;
+    border-radius: 20px;
+    padding: 8px 10px;
+    font-size: 14px;
+    color: #1e3a8a;
+    background-color: white;
+
+}
+.invalid-feedback-email{
+    font-size: 12px;
+}
+.invalid-feedback-password{
+    font-size: 12px;
 
 }
 .botonEnviar{
@@ -344,10 +363,27 @@ main img.img-receta {
     object-fit: cover; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
+.receta{
+    background-color: #7490af;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 90vw;
+    padding: 10px;
+    margin-bottom: 4px; 
+}
+#resultados{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
-/* .invalid-feedback-searchInput{ */
-    /* margin-left: 30px; */
-/* } */
+.subrayado{
+    text-decoration: none;
+    list-style-type: none;
+    font-size: larger;
+color: #1e3a8a;
+}
 
 
 
@@ -456,4 +492,10 @@ main img.img-receta {
         font-size: 22px;
         font-weight: 400;
     }
+    .subrayado{
+        
+        font-size: medium;
+    
+    }
+   
 } 

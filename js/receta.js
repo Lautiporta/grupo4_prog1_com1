@@ -1,10 +1,8 @@
 let queryString = location.search;
 console.log(queryString);
-
 let urlParams = new URLSearchParams(queryString);
 let RecetaId = urlParams.get("id");
 console.log(RecetaId);
-
 let RecetaApi = `https://dummyjson.com/recipes/${RecetaId}`;
 
 fetch(RecetaApi)

@@ -16,10 +16,11 @@
             <a href="categories.html">Categorías</a>
             <a href="login.html">Login</a>
             <a href="register.html">Registro</a>
-            <form action="search-results.html" class="formBuscar">
-                <input  type="text" id="searchInput" placeholder="Buscar receta">
-                <div class="invalid-feedback-searchInput"></div>
+            <form action="search-results.html" class="formBuscar" method="get">
+                <input type="search" name="search" id="searchInput" placeholder="Buscar receta">
                 <button class="botonBuscar" type="submit">Buscar</button>
+                <div class="invalid-feedback-searchInput"></div>
+                
             </form>
         </nav>
     </header>
