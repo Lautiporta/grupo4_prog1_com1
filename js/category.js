@@ -22,17 +22,11 @@ fetch(url)
   })
   .then(function (data) {
     console.log(data); 
-
-
     let recetas = data.recipes || [];
-
     let recetasFiltradas = recetas.filter((receta) =>
       receta.tags.includes(categoria)
     );
-
-
     let container = document.querySelector(".containerCategory");
-
     if (recetasFiltradas.length === 0) {
       container.innerHTML = "<p>No se encontraron recetas para esta categoría.</p>";
       return;

@@ -8,8 +8,6 @@ function obtenerRecetas() {
         })
         .then(function(data) {
             console.log(data.recipes); 
-
-            
             let arrayDeRecetas = data.recipes;
             let seccion = document.querySelector('.container1');
             let allRecipesHTML = ""; 
@@ -23,11 +21,7 @@ function obtenerRecetas() {
                   </div> <div class="productosLink"> 
                   <a class="detalles2" href="receta.html?id=${arrayDeRecetas[i].id}">Detalle</a> </div> </article>`;;
             }
-
-             
             seccion.innerHTML += allRecipesHTML;
-
-            
             cantidadRecetas += 10;
         })
         .catch(function(error) {
@@ -35,13 +29,12 @@ function obtenerRecetas() {
         });
 }
 
-
 document.querySelector('.cargar-mas').addEventListener('click', function(e) {
     e.preventDefault(); 
     obtenerRecetas(); 
 });
 
-
 obtenerRecetas();
+
 
 

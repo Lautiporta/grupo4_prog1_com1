@@ -8,12 +8,8 @@ fetch(url)
   })
   .then(function(tags) {
     console.log(tags);
-
-    
     let seccion = document.querySelector(".containerArticles");
     let allTagsHTML = ""; 
-
-    
     for (let i = 0; i < tags.length; i++) {
       allTagsHTML += `
         <article class="articleCategorias">
@@ -24,11 +20,7 @@ fetch(url)
         </article>
       `;
     }
-
-
     seccion.innerHTML = allTagsHTML;
-
-    
   })
   .catch(function(e) {
     console.log("Error:", e);

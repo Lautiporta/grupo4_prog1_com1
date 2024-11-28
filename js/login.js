@@ -2,15 +2,9 @@
 
 let formulario = document.querySelector(".formLogin");
 let campoEmail = document.querySelector('#email');
-
 let campoPassword = document.querySelector('#password');
-
-
-
 let errorEmail = document.querySelector('.invalid-feedback-email');
-
 let errorPassword = document.querySelector('.invalid-feedback-password');
-
 
 formulario.addEventListener('submit', function(event){
     event.preventDefault();
@@ -21,8 +15,6 @@ formulario.addEventListener('submit', function(event){
       errorEmail.style.display = 'block';
       valid = false;
   }
-
-
     if (campoPassword.value == "") {
         errorPassword.innerText = 'Por favor complete el campo contraseña';
         errorPassword.style.display = 'block';
