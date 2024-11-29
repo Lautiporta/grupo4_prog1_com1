@@ -385,7 +385,22 @@ main img.img-receta {
 color: #1e3a8a;
 }
 
+#containerCategory{
+     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
+.invalid-feedback-searchInput {
+    color: black;
+    margin-left: 25px;
+    font-size: 12px;
+    
+}
+.formBuscar{
+    display: flex;
+    flex-direction: column;
+}
 
 
 
