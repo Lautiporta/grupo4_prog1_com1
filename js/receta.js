@@ -12,7 +12,7 @@ fetch(RecetaApi)
     .then(function (data) {
         console.log(data);
 
-        let Nombrereceta = document.querySelector('.recetasDeliciosas   ');
+        let Nombrereceta = document.querySelector('.recetasDeliciosas');
         let instrucciones = document.querySelector('.instrucciones');
         let tiempo = document.querySelector('.tiempoCoccion');
         let imagenreceta = document.querySelector('.img-receta');
@@ -25,16 +25,17 @@ fetch(RecetaApi)
 
         let categorias = data.tags;
         let categoriasElement = document.querySelector('.categorias');
-        categorias.forEach((categoria, index) => {
-            let linkElement = document.createElement('a');
-            linkElement.href = `categories.html?categoria=${categoria}`;
-            linkElement.textContent = categoria;
-            categoriasElement.appendChild(linkElement);
 
-            if (index < categorias.length - 1) {
-                categoriasElement.innerHTML += ', '; 
+        // Usamos un bucle for para iterar sobre las categorías
+        for (let i = 0; i < categorias.length; i++) {
+            let categoria = categorias[i];
+            // Insertamos el enlace directamente con innerHTML
+            categoriasElement.innerHTML += `<a href="categories.html?categoria=${categoria}">${categoria}</a>`;
+            
+            if (i < categorias.length - 1) {
+                categoriasElement.innerHTML += ', ';
             }
-        });
+        }
     })
     .catch(function (e) {
         console.error("Error al obtener los datos:", e);
