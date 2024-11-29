@@ -26,10 +26,8 @@ fetch(RecetaApi)
         let categorias = data.tags;
         let categoriasElement = document.querySelector('.categorias');
 
-        // Usamos un bucle for para iterar sobre las categorías
         for (let i = 0; i < categorias.length; i++) {
             let categoria = categorias[i];
-            // Insertamos el enlace directamente con innerHTML
             categoriasElement.innerHTML += `<a href="categories.html?categoria=${categoria}">${categoria}</a>`;
             
             if (i < categorias.length - 1) {

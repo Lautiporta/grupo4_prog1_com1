@@ -48,14 +48,11 @@ formulario.addEventListener('submit', function(event){
         errorBusqueda.style.display = 'block';
         valid = false;
     }
-    
     else if (campoBusqueda.value.length < 3) {
         errorBusqueda.innerText = 'El término de búsqueda debe tener al menos 3 caracteres';
         errorBusqueda.style.display = 'block';
         valid = false;
     } 
-
-    
     if (valid) {
         formulario.submit();
 }});
